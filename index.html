@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+
+<body>
+    <div class="container">
+        <h1>💰 Smart Expense Tracker</h1>
+
+        <form action="" id="transaction-form">
+            <input type="text" name="" id="title" placeholder="Enter Title" required />
+            <input type="number" name="" id="amount" placeholder="Enter Amount" required />
+            <select name="" id="type">
+                <option value="" disabled selected>Select Type</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+
+            <input type="date" name="" id="date" required />
+            <button type="submit" id="submit-btn">Add Transaction</button>
+
+        </form>
+
+        <div class="filter-search">
+            <input type="text" id="search" placeholder="Search Transactions..." />
+
+        </div>
+
+
+        <ul id="transaction-list"></ul>
+
+
+        <div class="summary">
+            <p>Total Income: ₹<span id="total-income">0</span></p>
+            <p>Total Expense: ₹<span id="total-expense">0</span></p>
+            <p>Balance: ₹<span id="balance">0</span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
